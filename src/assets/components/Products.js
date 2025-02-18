@@ -29,7 +29,7 @@ const Products = () => {
                             <p>${product.price}</p>
                         </div>
                         <div>
-                            <button className="add" onClick={() => addToCart(product)} disabled={cart.find((item) => item.id === product.id)}>{cart.find((item) => item.id === product.id) ? 'Added' : 'Add to Cart'}</button>
+                            <button className="add" onClick={() => addToCart(product)}>add</button>
                             <button className="buy" onClick={() => navigate(`/product/${product.id}`, { state: { product } })}>Buy Now </button>
                         </div>
                     </div>

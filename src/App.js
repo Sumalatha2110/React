@@ -8,6 +8,7 @@ import ProductDetails from './assets/components/Productdetail';
 import './App.css';
 import Header from './assets/components/Header';
 import SubmitForm from './assets/components/Form'
+import Cart from './assets/components/Cart';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<><Banner /><Products /><About /><Socialmedia /><Footer /></>} />
         <Route path="/product/:id" element={<><Header /><ProductDetails /><SubmitForm /><Socialmedia /><Footer /> </>} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );
